@@ -7,21 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD74164A229EC00200543394 /* SmoothRefreshDataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD741646229EC00200543394 /* SmoothRefreshDataStorage.swift */; };
+		BD74164B229EC00200543394 /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD741647229EC00200543394 /* TableView.swift */; };
+		BD74164C229EC00200543394 /* SmoothRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD741648229EC00200543394 /* SmoothRefresh.swift */; };
+		BD74164D229EC00200543394 /* SmoothRefreshDataUpdating.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD741649229EC00200543394 /* SmoothRefreshDataUpdating.swift */; };
 		BD8BCA40229E85E500CC16C2 /* SmoothRefresh.h in Headers */ = {isa = PBXBuildFile; fileRef = BD8BCA3E229E85E500CC16C2 /* SmoothRefresh.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BD8BCA4B229E86A100CC16C2 /* SmoothRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8BCA4A229E86A100CC16C2 /* SmoothRefresh.swift */; };
-		BD8BCA4E229E86D600CC16C2 /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8BCA4D229E86D600CC16C2 /* TableView.swift */; };
-		BD8BCA50229E875500CC16C2 /* SmoothRefreshDataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8BCA4F229E875500CC16C2 /* SmoothRefreshDataStorage.swift */; };
-		BD8BCA52229E876700CC16C2 /* SmoothRefreshDataUpdating.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8BCA51229E876700CC16C2 /* SmoothRefreshDataUpdating.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BD741646229EC00200543394 /* SmoothRefreshDataStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmoothRefreshDataStorage.swift; sourceTree = "<group>"; };
+		BD741647229EC00200543394 /* TableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
+		BD741648229EC00200543394 /* SmoothRefresh.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmoothRefresh.swift; sourceTree = "<group>"; };
+		BD741649229EC00200543394 /* SmoothRefreshDataUpdating.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmoothRefreshDataUpdating.swift; sourceTree = "<group>"; };
 		BD8BCA3B229E85E500CC16C2 /* SmoothRefresh.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SmoothRefresh.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD8BCA3E229E85E500CC16C2 /* SmoothRefresh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SmoothRefresh.h; sourceTree = "<group>"; };
 		BD8BCA3F229E85E500CC16C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BD8BCA4A229E86A100CC16C2 /* SmoothRefresh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmoothRefresh.swift; sourceTree = "<group>"; };
-		BD8BCA4D229E86D600CC16C2 /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
-		BD8BCA4F229E875500CC16C2 /* SmoothRefreshDataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmoothRefreshDataStorage.swift; sourceTree = "<group>"; };
-		BD8BCA51229E876700CC16C2 /* SmoothRefreshDataUpdating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmoothRefreshDataUpdating.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,38 +54,14 @@
 		BD8BCA3D229E85E500CC16C2 /* SmoothRefresh */ = {
 			isa = PBXGroup;
 			children = (
-				BD8BCA4C229E86C200CC16C2 /* Extensions */,
-				BD8BCA49229E869200CC16C2 /* Protocols */,
-				BD8BCA48229E868C00CC16C2 /* Classes */,
+				BD741648229EC00200543394 /* SmoothRefresh.swift */,
+				BD741646229EC00200543394 /* SmoothRefreshDataStorage.swift */,
+				BD741649229EC00200543394 /* SmoothRefreshDataUpdating.swift */,
+				BD741647229EC00200543394 /* TableView.swift */,
 				BD8BCA3E229E85E500CC16C2 /* SmoothRefresh.h */,
 				BD8BCA3F229E85E500CC16C2 /* Info.plist */,
 			);
 			path = SmoothRefresh;
-			sourceTree = "<group>";
-		};
-		BD8BCA48229E868C00CC16C2 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				BD8BCA4A229E86A100CC16C2 /* SmoothRefresh.swift */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		BD8BCA49229E869200CC16C2 /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				BD8BCA4F229E875500CC16C2 /* SmoothRefreshDataStorage.swift */,
-				BD8BCA51229E876700CC16C2 /* SmoothRefreshDataUpdating.swift */,
-			);
-			path = Protocols;
-			sourceTree = "<group>";
-		};
-		BD8BCA4C229E86C200CC16C2 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				BD8BCA4D229E86D600CC16C2 /* TableView.swift */,
-			);
-			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,7 +107,7 @@
 				TargetAttributes = {
 					BD8BCA3A229E85E500CC16C2 = {
 						CreatedOnToolsVersion = 10.1;
-						LastSwiftMigration = 1010;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -141,6 +117,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = BD8BCA31229E85E500CC16C2;
 			productRefGroup = BD8BCA3C229E85E500CC16C2 /* Products */;
@@ -167,10 +144,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD8BCA52229E876700CC16C2 /* SmoothRefreshDataUpdating.swift in Sources */,
-				BD8BCA50229E875500CC16C2 /* SmoothRefreshDataStorage.swift in Sources */,
-				BD8BCA4E229E86D600CC16C2 /* TableView.swift in Sources */,
-				BD8BCA4B229E86A100CC16C2 /* SmoothRefresh.swift in Sources */,
+				BD74164C229EC00200543394 /* SmoothRefresh.swift in Sources */,
+				BD74164D229EC00200543394 /* SmoothRefreshDataUpdating.swift in Sources */,
+				BD74164A229EC00200543394 /* SmoothRefreshDataStorage.swift in Sources */,
+				BD74164B229EC00200543394 /* TableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,13 +206,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -287,12 +265,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
