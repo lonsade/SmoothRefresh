@@ -31,6 +31,8 @@ public class SmoothRefresh {
     private var actionAfterTableUpdating: SmoothRefreshActionAfterTableUpdating?
     private var actionAfterDataUpdating: SmoothRefreshActionAfterDataUpdating?
     
+    private var timer: Timer?
+    
     public init(
         dataStorage: SmoothRefreshDataStorage,
         dataUpdating: SmoothRefreshDataUpdating
@@ -75,6 +77,11 @@ extension SmoothRefresh {
         }
     }
     
+    @objc private func checkEndRefreshAnimationForLowTargetDeployment() {
+        guard let timer = timer else { return }
+        checkEndRefreshAnimation(with: timer)
+    }
+    
     @objc private func refreshed() {
         if isReloadedAndUpdated {
             setupCheckEndRefreshAnimation()
@@ -89,8 +96,18 @@ extension SmoothRefresh {
     }
     
     private func setupCheckEndRefreshAnimation() {
-        Timer.scheduledTimer(withTimeInterval: 0.05, repeats: true) { [weak self] timer in
-            self?.checkEndRefreshAnimation(with: timer)
+        if #available(iOS 10.0, *) {
+            Timer.scheduledTimer(withTimeInterval: 0.05, repeats: true) { [weak self] timer in
+                self?.checkEndRefreshAnimation(with: timer)
+            }
+        } else {
+            timer = Timer.scheduledTimer(
+                timeInterval: 0.05,
+                target: self,
+                selector: #selector(checkEndRefreshAnimationForLowTargetDeployment),
+                userInfo: nil,
+                repeats: true
+            )
         }
     }
     
