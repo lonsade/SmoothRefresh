@@ -71,7 +71,7 @@ extension SmoothRefresh {
     }
     
     private func checkEndRefreshAnimation(with timer: Timer) {
-        if refreshControlView.frame.origin.y == 0 {
+        if refreshControlView.frame.origin.y <= 0 {
             timer.invalidate()
             endRefreshingAnimationTriggered()
         }
