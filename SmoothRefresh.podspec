@@ -8,7 +8,7 @@ s.summary = "Refresh control without freezes and jumps."
 s.requires_arc = true
 
 # 2
-s.version = "0.0.2"
+s.version = "0.0.3"
 
 # 3
 s.license = { :type => "MIT", :file => "LICENSE" }
@@ -21,7 +21,7 @@ s.homepage = "https://github.com/lonsade"
 
 # 6 - Replace this URL with your own Git URL from "Quick Setup"
 s.source = { :git => "https://github.com/lonsade/SmoothRefresh.git",
-:tag => "v0.0.2" }
+:tag => "v0.0.3" }
 
 # 7
 s.framework = "UIKit"
